@@ -1,3 +1,4 @@
 print("Hello world!")
-name = input("Please enter your name:")
+name = input("Please enter your full name:")
+ary = name.split()
 
