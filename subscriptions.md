@@ -1,4 +1,4 @@
-## database
+## Database
 _Tables_: chatopssubscriptions, chatopsInstallations
 # List of workflows:
 ## subscribe
