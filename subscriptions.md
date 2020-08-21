@@ -7,7 +7,6 @@ _Tables_: chatopssubscriptions, chatopsInstallations
 Lists the repositories and accounts that users have subscribed to in the given channel.
 
 _command_: `@github subscribe list`
-
 _prerequisites:_
 Users should be signed in on the Github app on Teams to view the list of subscriptions.
 
