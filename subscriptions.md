@@ -5,6 +5,7 @@ _Tables_: chatopssubscriptions, chatopsInstallations
 ## unsubscribe
 ## subscribe list
 Lists the repositories and accounts that users have subscribed to in the given channel.
+afda
 
 _command_: `@github subscribe list`
 
