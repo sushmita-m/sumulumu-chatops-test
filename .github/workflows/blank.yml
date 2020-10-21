@@ -24,3 +24,23 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
+      - name: Push Notification
+          uses: ProtocolRedefined/Dynamic-Template-Engine@master
+          with:
+            repoName: gsaraldemo/Ecosystem-Template-Repository
+            branchName: master
+            data: '{ "message" : ${{ steps.main-script.outputs.scorecard }} }'
+            templateType: HandleBars
+            sourceType: CatalogScoreCard
+            ClientType: Teams
+  
+  - name: Push Notification
+  			uses: ProtocolRedefined/Dynamic-Template-Engine@anuraag016/testhelpers
+  			with:
+  			repoName: gsaraldemo/Ecosystem-Template-Repository
+  			branchName: master
+  			data: '{ "message" : ${{ steps.main-script.outputs.scorecard }} }'
+  			templateType: HandleBars
+  			sourceType: CatalogScoreCard
+  			ClientType: Slack
+  			customHelpers: '{ "ifEq": "(arg1, arg2) =>(arg1 === arg2) ? "true" : """, "truncate": "(des)=>(des.length < 25) ? des : des.substring(0,25)+ "...""}'
