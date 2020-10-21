@@ -29,7 +29,7 @@ jobs:
         id: main-script
         shell: powershell
         run: |
-          $result = serviceCatalog.ps1
+          $result = &.serviceCatalog.ps1
           echo "::set-output name=scorecard::$result"
         env:
           SERVICE_CATALOG_TOKEN: ${{ secrets.SERVICE_CATALOG_TOKEN }}
