@@ -33,6 +33,7 @@ jobs:
           echo "::set-output name=scorecard::$result"
         env:
           SERVICE_CATALOG_TOKEN: ${{ secrets.SERVICE_CATALOG_TOKEN }}
+
       - name: Push Notification
         uses: ProtocolRedefined/Dynamic-Template-Engine@master
         with:
@@ -42,6 +43,7 @@ jobs:
           templateType: HandleBars
           sourceType: CatalogScoreCard
           ClientType: Teams
+
       - name: Push Notification
         uses: ProtocolRedefined/Dynamic-Template-Engine@anuraag016/testhelpers
         with:
