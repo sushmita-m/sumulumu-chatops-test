@@ -35,3 +35,4 @@ jobs:
           sourceType: CatalogScoreCard
           ClientType: Slack
           customHelpers: '{ "ifEq": "(arg1, arg2) =>(arg1 === arg2) ? "true" : """, "truncate": "(des)=>(des.length < 25) ? des : des.substring(0,25)+ "...""}'
+
