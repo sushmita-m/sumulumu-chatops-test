@@ -24,8 +24,6 @@ _ghInstallationId_ is used to get authorization to the github client which will 
 
 **The following details are passed to the GithubApi:**
    * if _ghArtifactType_ is 'Repo':  _ghArtifactId_ is passed, it contains the repository id.
-   * if _ghArtifactType_is 'Account': _ghArtifactId_ is passed, it contains the user id.
-
 
 if the authorization is successfull, using the GithubAPI We will get the details about each subscription.
 
