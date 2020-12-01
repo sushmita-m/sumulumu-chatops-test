@@ -22,10 +22,6 @@ We get the _ghArtifactId_, _ghArtifactType_ from the chatopssubscriptions table.
 
 _ghInstallationId_ is used to get authorization to the github client which will be used to make the api calls to get details about the artifact (This will tell us if the app has been uninstalled from the repo/account after the subscription).
 
-**The following details are passed to the GithubApi:**
-   * if _ghArtifactType_ is 'Repo':  _ghArtifactId_ is passed, it contains the repository id.
-   * if _ghArtifactType_is 'Account': _ghArtifactId_ is passed, it contains the user id.
-
 
 if the authorization is successfull, using the GithubAPI We will get the details about each subscription.
 
